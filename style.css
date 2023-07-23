@@ -1,3 +1,8 @@
-h2 b span {
-  color: red;
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
