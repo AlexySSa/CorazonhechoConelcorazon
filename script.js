@@ -263,6 +263,23 @@ gl.uniform1f(heightHandle, window.innerHeight);
 var lastFrame = Date.now();
 var thisFrame;
 
+// JavaScript Document
+// Resto del código...
+
+// Función para aplicar el color del shader al texto
+function applyColorToText() {
+  var textDiv = document.getElementById("textDiv");
+  var textCol = vec3(0.0);
+
+  // Código del shader para obtener el color del corazón
+  // ...
+
+  // El valor col contiene el color calculado para el corazón
+  // Podemos utilizarlo para el texto también
+  textDiv.style.color = "rgb(" + (col.r * 255) + "," + (col.g * 255) + "," + (col.b * 255) + ")";
+  
+}
+//aqui acaba gpt
 function draw(){
 	
   //Update time
@@ -277,5 +294,6 @@ function draw(){
 
   requestAnimationFrame(draw);
 }
+
 
 draw();
